@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content  style="--background: black;">
+        <ion-row>
+          <ion-col>
+            <ion-badge color="light" style="border-radius: 15px;padding: 5px;position: absolute;margin: -7px 0px 0px 18px;">77</ion-badge>
+            <ion-icon name="notifications-outline" style="color:#fff;font-size: 35px;">
+            
+            </ion-icon>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+
+        <div style="margin: 10px auto 30px auto; text-align: center;">
+          <img src="../assets/images.jpg" style="height: 80px;width:80px;border-radius: 100%;border:2px solid white;" />
+        </div>
+
+
+        <ion-item style="width: max-content;--background: #3880ff;    margin: auto; border-radius: 25px;">
+          <ion-select placeholder="Select One" style="box-sizing: content-box;width: 100%;
+          max-width: 100%;--placeholder-color: white;color:white;opacity: 100;" value="f">
+            <ion-select-option value="f" >Dishman</ion-select-option>
+            <ion-select-option value="m">Jonhy</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <div style=" margin: auto;text-align: center;">
+          <ion-button shape="round" style="height: 50px; margin-top: 30px; border-radius: 25px;" color="primary">Invite User</ion-button>
+        </div>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,61 @@
+<ion-header [translucent]="true"  style="--background: #3880ff;">
+  <ion-toolbar *ngIf="platformname == 'M'" style="--background: #3880ff;">
+    <ion-buttons slot="end">
+      <ion-icon name="grid-outline" style="color: white;color: white;font-size: 25px;margin: 22px"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button style="color: white;background: black;"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar >
+
+  <ion-toolbar *ngIf="platformname == 'D'" style="--background: #3880ff;">
+    <ion-searchbar placeholder="Search Here" class="custom_search" style="--background : transparent;--box-shadow: none;--placeholder-color: white;
+    --placeholder-opacity: 100;"></ion-searchbar>
+
+    <ion-buttons slot="end" style="border: 2px solid white;  border-radius: 25px;margin-left: 5px; margin-right: 5px;">
+      <ion-select placeholder="Select One" style="box-sizing: content-box;width: 100%;padding: 6px;
+      max-width: 100%;--placeholder-color: white;color:white;opacity: 100;" value="f">
+        <ion-select-option value="f" >Dishman</ion-select-option>
+        <ion-select-option value="m">Jonhy</ion-select-option>
+      </ion-select>    
+    </ion-buttons>
+   
+
+    <ion-buttons slot="end">
+      <div style=" margin: auto;text-align: center;">
+        <ion-button shape="round" fill="outline" style="border-radius: 25px;" color="light">Invite User</ion-button>
+      </div>
+    </ion-buttons>
+    <ion-buttons slot="end" style="margin-right: 7px;">
+      <ion-icon name="funnel-outline" style="color: white;color: white;font-size: 25px;margin: 14px"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="grid-outline" style="color: white;color: white;font-size: 25px;margin: 14px"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" style="margin-right: 20px;">
+      <ion-badge color="light" style="border-radius: 15px;padding: 5px;font-size:8px;position: absolute;margin: -12px 0px 0px 14px;">77</ion-badge>
+      <ion-icon name="notifications-outline" style="color:#fff;font-size: 24px;"></ion-icon>
+    </ion-buttons>
+
+    <ion-buttons slot="end" style="margin-right: 7px;">
+      <img src="../assets/images.jpg" style="height: 40px;width:40px;border-radius: 100%;border:2px solid white;" />
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"  style="--background: lightblue;--padding-start: 16px;
+--padding-end: 16px;--padding-bottom: 16px;
+--padding-top: 16px;">
+
+  <ion-card style="height: 100px;padding: 10px;">
+   <ion-label style="text-align: center;">Card 1</ion-label> 
+  </ion-card>
+  <ion-card   style="height: 100px;padding: 10px;">
+    <ion-label style="text-align: center;">Card 2</ion-label> 
+  </ion-card>
+  <ion-card   style="height: 100px;padding: 10px;">
+    <ion-label style="text-align: center;">Card 3</ion-label>
+  </ion-card>
+</ion-content>
